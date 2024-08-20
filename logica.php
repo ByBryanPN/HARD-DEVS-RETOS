@@ -11,27 +11,29 @@ if (isset($_POST['enviar'])) {
         echo"<div class='message-me'>
                     <h2> $numero  </h2>
                         </div>";
-
+        
         foreach($resultados as $valores){
-
+          
             echo "<div class='message-bot'>
                     <h2> $valores  </h2>
                         </div>"; 
         }
         
     }
-    else if($numero = 0 || $numero = 1){
+    else if($numero == 0 || $numero == 1){
 
         echo"<div class='message-me'>
                     <h2> $numero  </h2>
                         </div>";
-
-        echo "<div class='message-bot'>
-                    <h2> </h2>
+        
+        echo "<div class='message-bot' style='width: 190px;'>
+                    <h2>El número $numero no es valido!</h2>
                         </div>"; 
 
     }
 }
+
+
 
 function Algoritmo_Criba($limite)
 {
@@ -58,3 +60,5 @@ function Algoritmo_Criba($limite)
 
     return $primos;
 }
+
+

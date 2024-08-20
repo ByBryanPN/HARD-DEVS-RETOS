@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PILAS Y COLAS</title>
+
+</head>
+
+<body>
+    <div class="container-global">
+        <div class="container">
+            <div class="cardF">
+                <div class="card__form">
+                    <input id="stackInput" placeholder="Ingresa una pila..." type="text">
+                    <button class="sign-up" onclick="pushToStack()">Añadir</button>
+                    <button class="sign-up" onclick="popFromStack()">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__title">PILAS</div>
+                <div class="card__data">
+                    <div id="stackContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cardF">
+                <div class="card__form">
+                    <input id="queueInput" placeholder="Ingresa una cola..." type="text">
+                    <button class="sign-up" onclick="enqueueToQueue()">Añadir</button>
+                    <button class="sign-up" onclick="dequeueFromQueue()">Eliminar</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__title">COLAS</div>
+                <div class="card__data">
+                    <div id="queueContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+
+</html>

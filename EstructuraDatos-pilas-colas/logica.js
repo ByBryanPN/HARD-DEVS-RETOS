@@ -12,7 +12,7 @@ class Stack {
 
     pop() {
         if (this.isEmpty()) {
-            alert('Stack is empty');
+            alert('No hay pilas');
             return;
         }
         this.items.pop();
@@ -21,7 +21,7 @@ class Stack {
 
     peek() {
         if (this.isEmpty()) {
-            alert('Stack is empty');
+            alert('No hay pilas');
             return;
         }
         return this.items[this.items.length - 1];
@@ -70,7 +70,7 @@ class Queue {
 
     dequeue() {
         if (this.isEmpty()) {
-            alert('Queue is empty');
+            alert('No hay colas');
             return;
         }
         this.items.shift();
@@ -79,7 +79,7 @@ class Queue {
 
     front() {
         if (this.isEmpty()) {
-            alert('Queue is empty');
+            alert('No hay colas');
             return;
         }
         return this.items[0];
